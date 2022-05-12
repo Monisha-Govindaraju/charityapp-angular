@@ -1,0 +1,24 @@
+<form (ngSubmit)="register()">
+    <div class="container">
+      <h2>REGISTER</h2>
+      <hr>
+  
+      <label for="name"><b>NAME</b></label>
+      <input type="text" placeholder="Enter your name" [(ngModel)]="name"name="name" id="name" required>
+  
+      <label for="email"><b>EMAIL ID</b></label>
+      <input type="email" placeholder="Enter your email" [(ngModel)]="email"name="email" id="email" required>
+  
+      <label for="password"><b>PASSWORD</b></label>
+      <input type="password" placeholder="Enter your password" [(ngModel)]="password"name="password" id="password" required>
+
+      <label for="mobilenumber"><b>MOBILE NUMBER</b></label>
+      <input type="number" placeholder="Enter your mobile number" [(ngModel)]="mobileNumber"name="mobilenumber" id="mobilenumber" required>
+      <hr>
+  
+      <button type="submit" class="registerbtn">REGISTER</button>
+    </div>
+  
+    <div class="container signin">
+    </div>
+  </form>

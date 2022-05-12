@@ -1,0 +1,22 @@
+<!-- {{users | json}} -->
+
+<table class="table table-bordered">
+
+    <thead>
+        <tr>
+            <th>S.NO</th>
+            <th>NAME</th>
+            <th>EMAIL ID</th>
+            <th>MOBILE NUMBER</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users;let i= index">
+            <td>{{i+1}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.mobilenumber}}</td>
+        </tr>
+    </tbody>
+</table>
